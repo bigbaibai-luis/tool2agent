@@ -16,7 +16,9 @@ Hard rules:
 3. Include a "Compliance & Safety" section covering the tool's license and usage boundaries
    (e.g. scraping must respect robots.txt and privacy law; no unauthorized access).
 4. Frontmatter must contain exactly: name, description, color, emoji, vibe.
-   Use a snake_case color name and a single emoji.
+   - name: Title Case, human-readable (e.g. "Pandas Data Analyst"), NOT snake_case.
+   - color: a snake_case color name (e.g. indigo, teal).
+   - emoji: a single relevant emoji.
 
 Structure (use ## headings):
 ## Identity & Memory
