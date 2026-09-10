@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tool2agent"
+version = "0.1.0"
+description = "Turn any Python tool/library into an agency-agents-style AI persona."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+keywords = ["ai", "agents", "claude-code", "persona", "codegen", "scrapling"]
+
+[project.optional-dependencies]
+scrapling = ["scrapling[fetchers]>=0.5.0"]
+
+[project.scripts]
+tool2agent = "tool2agent.cli:main"
+
+[tool.setuptools]
+packages = ["tool2agent"]
